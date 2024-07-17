@@ -1,0 +1,59 @@
+# Git & GitHub Intermediate
+
+## For Windows, can use doskey
+
+## For Linux & MacOs, can do as the following
+
+1. echo “hello”   → output: hello
+2. alias h=”echo hello”
+3. h  → output hello
+
+Linux > .bashrc
+
+Mac > .zshrc   
+
+can save alias commands anywhere within those files. If you don’t save that echo alias commands will disappear as soon as you close your terminal
+
+can save like this |→ alias h = echo “hello”
+
+!! The most important thing is that you need to restart your terminal after you make something changes in that .bashrc (OR) .zshrc file
+
+## Using alias matched with GIT
+
+- saving alias commands with separate file. there is .aliases file in home directory. that file is created by sayr on his own. He uses that file for the purpose of saving all the aliases
+- Can create that aliases file using terminal > touch .aliases
+- Can open that aliases file after creating > code .aliases
+- In order to save all the aliases commands in newly created file which is known as .aliases also separate one, you need to put source ~/.aliases at the outermost line of the .bashrc (OR) .zshrc file
+
+#git aliases
+
+- alias gs = “git status”
+- alias gcom= “git checkout master”
+- alias gaa = “git add .”
+- alias gc = “git commit -m “
+- alias gp = “git push “
+- alias nah = “git reset - -hard && git clean -df”
+
+### Commands
+
+- git stash → only works for modified files
+- git stash - -include-untracked → works for both modified and untracked files
+- git stash pop
+
+### GIT GUI (Graphical User Interface) VS CLI (Command Line Interface)
+
+- GitHub Desktop ⇒ GUI software (not that much user friendly)
+- VS code (user friendly)
+
+### **GITHUB First Contributions**
+
+- type first contribution in search box
+- click fork which is on the right side of github
+- and clone that repo
+- at terminal can type git clone ———————————-
+- cd first-contributions
+- git checkout -b HMT
+
+### Git IGNORE CONCEPT
+
+- is used not to track folders
